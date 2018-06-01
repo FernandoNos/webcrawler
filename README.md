@@ -22,14 +22,14 @@ scrapy crawl webcrawler
 * Melhor Categorização das páginas: No estado atual, o sistema percorre as páginas e as adiciona a um dicionário. Durante esse processo, também é criada a árvore que representa a estrutura do site. O tipo de cada página (html, pdf, ...), é definido em um estado futuro, no momento em que dada página é também percorrida. Visto que somente é utilizado o valor presente no header 'Content-Type' para que este tipo seja definido, acredito que seria interessante uma real categorização entre elementos estáticos e páginas html, de forma que possibilitaria uma estruturação de site map mais limpa e clara.
 
 * Melhoria do sitemap gerado: A aplicação gera um arquivo com uma estrutura hierarquica de URLs, onde cada novo nível representa o caminho percorrido até determinada URL. Porém, a visualização dos elementos não é simples, tendo o usuário que prestar muita atenção para encontrar a URL procurada. Idealmente, em uma versão futura, eu modificaria o programa para que somente listasse os níveis diferentes que estão sendo percorridos
-...
+```
 sicredi.com.br
 |html
 ||para-voce
 |||credito
 ||||carta-fianca
 ||||imagem.png
-... 
+```
 
 Da forma como o programa foi desenvolvido, onde estamos reaproveitando o processo de extração para criar a árvore, assim como fazer o carregamento da próxima página, tomaria um pouco mais de tempo para fazer a quebra da URL nesses níveis (e achei que seria melhor focar na funcionalidade nesse momento).
 
