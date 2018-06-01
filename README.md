@@ -5,7 +5,9 @@ Este projeto foi desenvolvido com o objetivo de demonstrar a minha estrutura par
 ## Detalhes
 
 [Python](https://www.python.org/) - Linguagem de Programação
+
 [Scrapy](https://scrapy.org/) - Framework para extração de dados de web sites
+
 [Elementary OS](https://elementary.io/) - Sistema operacional utilizado para desenvolvimento
 
 ## Execução
