@@ -10,10 +10,18 @@ Este projeto foi desenvolvido com o objetivo de demonstrar a minha estrutura par
 
 [Elementary OS](https://elementary.io/) - Sistema operacional utilizado para desenvolvimento
 
+## Estratégia para desenvolvimento
+
+Abaixo encontra-se o passo-a-passo utilizado durante o desenvolvimento:
+
+1. Definição da linguagem de programação: Decidi utilizar python por ser uma linguagem que permite a criação de projetos de forma rápida, sem que muita configuração seja feita, e também pela facilidade de utilização de bibliotecas;
+2. Pesquisa sobre biblioteca para crawler: Como dito na descrição do desafio, busquei tecnologias atuais para o desenvolvimento, sem que fosse necessário "reinventar a roda". Dessa forma, busquei bibliotecas que auxiliassem no desenvolvimento em python, e encontrei muitas referências a Scrapy;
+3. Implementação de uma prova de conceito inicial: A partir da documentação da biblioteca, iniciei um processo para implementar uma prova de conceito que me daria o conhecimento sobre a linguagem necessário para o desenvolvimento;
+4. Primeira prova de conceito concluída: Após ter concluído uma primeira prova de conceito, a partir do caso de uso mais básico (extração de links de uma dada página), passei a incrementar o mesmo projeto, para atingir o objetivo final;
+5. Refinamento do resultado final: A partir do momento em que obtive um resultado satisfatório, passei a refinar a execução do programa, tentando extrair o máximo dos crawlers, de forma que a verificação do resultado final fosse facilitada;
+6. Documentação: Comentários adicionados ao código, juntamente com a criação do README.md.
+
 ## Execução
-
-No diretório raiz do projeto 
-
 
 ### Linux
 1. Instale Python 2.7+
@@ -24,6 +32,10 @@ No diretório raiz do projeto
 ```
 scrapy crawl webcrawler
 ```
+
+6. Após a execução, um arquivo chamado sitemap.txt será criado na pasta do projeto.
+
+OBS: Para melhor visualização da execução, mantive o nível de log em DEBUG. Caso seja necessário modificá-lo, adicionar a linha LOG_LEVEL='INFO' no arquivo settings.py .
 
 ## Pontos adicionais
 * Melhor Categorização das páginas: No estado atual, o sistema percorre as páginas e as adiciona a um dicionário. Durante esse processo, também é criada a árvore que representa a estrutura do site. O tipo de cada página (html, pdf, ...), é definido em um estado futuro, no momento em que dada página é também percorrida. Visto que somente é utilizado o valor presente no header 'Content-Type' para que este tipo seja definido, acredito que seria interessante uma real categorização entre elementos estáticos e páginas html, de forma que possibilitaria uma estruturação de site map mais limpa e clara.
