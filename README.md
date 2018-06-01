@@ -14,6 +14,13 @@ Este projeto foi desenvolvido com o objetivo de demonstrar a minha estrutura par
 
 No diretório raiz do projeto 
 
+
+### Linux
+1. Instale Python 2.7+
+3. Instale o pip
+4. Instale o Scrapy
+5. Vá até a pasta do projeto e execute 
+
 ```
 scrapy crawl webcrawler
 ```
