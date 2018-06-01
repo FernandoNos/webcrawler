@@ -14,9 +14,9 @@ Este projeto foi desenvolvido com o objetivo de demonstrar a minha estrutura par
 
 No diretório raiz do projeto 
 
-...
+```
 scrapy crawl webcrawler
-...
+```
 
 ## Pontos adicionais
 * Melhor Categorização das páginas: No estado atual, o sistema percorre as páginas e as adiciona a um dicionário. Durante esse processo, também é criada a árvore que representa a estrutura do site. O tipo de cada página (html, pdf, ...), é definido em um estado futuro, no momento em que dada página é também percorrida. Visto que somente é utilizado o valor presente no header 'Content-Type' para que este tipo seja definido, acredito que seria interessante uma real categorização entre elementos estáticos e páginas html, de forma que possibilitaria uma estruturação de site map mais limpa e clara.
